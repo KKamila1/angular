@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app-contacts';
+  imie ='kamila';
+
+  kliknij(){
+    alert("test");
+  }
 }
