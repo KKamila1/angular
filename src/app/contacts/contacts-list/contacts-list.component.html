@@ -5,6 +5,7 @@
       <th>Nazwisko</th>
       <th>Imię</th>
       <th>Nr telefonu</th>
+      <th>Akcja</th>
     </tr>
   </thead>
   <tbody>
@@ -13,6 +14,7 @@
       <td>{{contact.surname}}</td>
       <td>{{contact.firstName}}</td>
       <td>{{contact.phoneNumber}}</td>
+      <td> <button (click)="removeContact(contact.id, $event)" class="btn btn-sm btn-danger">Usuń</button></td>
     </tr>
   </tbody>
 

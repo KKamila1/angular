@@ -25,4 +25,14 @@ export class ContactsListComponent implements OnInit {
     this.contactsService.getContacts().subscribe(contacts => { this.contacts = contacts });
   }
 
+  removeContact(id: number, event: Event): void {
+    event.stopPropagation();
+    const conf = confirm('Czy na pewno chcesz usunść ten kontakt?');
+    if (conf) {
+      this.contactsService.removeContact(id).subscribe(()=>{
+        this.showContacts();
+      });
+    }
+  }
+
 }
