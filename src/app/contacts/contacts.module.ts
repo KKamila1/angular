@@ -5,6 +5,7 @@ import { ContactsRoutingModule } from './contacts-routing.module';
 import { ContactDetailsComponent } from './contact-details/contact-details.component';
 import { ContactAddComponent } from './contact-add/contact-add.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -18,7 +19,8 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     ContactsRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SharedModule
   ],
   exports:[
     ContactsListComponent,
