@@ -17,11 +17,11 @@ export class ContactsListComponent implements OnInit {
     this.showContacts();
   }
 
-  hideContacts() {
+  hideContacts(): void {
     this.contacts = [];
   }
 
-  showContacts() {
+  showContacts(): void {
     this.contactsService.getContacts().subscribe(contacts => { this.contacts = contacts });
   }
 

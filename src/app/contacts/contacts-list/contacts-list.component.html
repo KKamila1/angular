@@ -19,8 +19,8 @@
 </table>
 
 <ng-template #noContactsAlert>
-    <p class="no-contacts">Obecnie nie masz kontaktów do wyświetlenia.</p>
+  <p class="no-contacts">Obecnie nie masz kontaktów do wyświetlenia.</p>
 </ng-template>
-
-<button (click)="hideContacts()" class="btn btn-danger btm-sm">ukryj</button>
-<button (click)="showContacts()" class="btn btn-info btm-sm">pokaż</button>
+<button [routerLink]="['/contact-add']" class="btn btn-success btm-sm"> Dodaj </button>
+<button (click)="hideContacts()" class="btn btn-danger btm-sm">Ukryj</button>
+<button (click)="showContacts()" class="btn btn-info btm-sm">Pokaż</button>
