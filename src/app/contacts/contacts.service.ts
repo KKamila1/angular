@@ -17,4 +17,8 @@ export class ContactsService {
   getContactById(id: number): Observable<any> {
     return this.httpClient.get(`${this.baseApiUrl}/contact/${id}`);
   }
+
+  addContact(data: {}): Observable<any> {
+    return this.httpClient.post(`${this.baseApiUrl}/contact/add`, data);
+  }
 }
